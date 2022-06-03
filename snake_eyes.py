@@ -61,15 +61,9 @@ while True:
     die_one = roll(1, 6)
     die_two = roll(1, 6)
 
-    for i in dice_drawing:
-        if i == die_one:
-            draw_dice_one = dice_drawing[i]
-        if i == die_two:
-            draw_dice_two = dice_drawing[i]
-
     print(f'''
 You rolled a {die_one} and a {die_two}
-{draw_dice_one}  {draw_dice_two}
+{dice_drawing[die_one]}  {dice_drawing[die_two]}
     ''')
 
     if die_one == 1 and die_two == 1:
