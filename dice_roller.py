@@ -16,11 +16,11 @@ def player_input():
 player_choice = player_input()
 
 while True:
-    rolls = "| "
+    rolls = "|"
 
-    for i in range(0, player_choice[0]):
+    for i in range(player_choice[0]):
         roll_die = random.randint(1, player_choice[1])
-        rolls += f"{roll_die} |"
+        rolls += f" {roll_die} |"
 
     print(rolls)
 
